@@ -1,13 +1,11 @@
 package ge.softlab.lessons.onlinebanking.models;
 
-import java.time.LocalDate;
-
-public record PersonModel(
-        Integer id,
+public record PersonSearchModel(
         String personalNumber,
         String firstName,
         String lastName,
-        LocalDate birthDate
+        Integer ageFrom,
+        Integer ageTo,
+        String iban
 ) {
-
 }
